@@ -1,0 +1,15 @@
+THE SCRIPT COMES WITH ABSOLUTELY NO WARRENTY - USE IT AT YOUR OWN RISK
+
+This is a very basic script hacked up in about 5 minutes to take the XML file containing all the build jobs in Bamboo 
+(Usually called administrationConfiguration.xml) into the Jenkins format. 
+
+When I wrote this, our Bamboo jobs were named CON, DAILY, and REL. CON was for continuous builds and would poll the SCM every 5 minutes, 
+DAILY would run every night and REL would be manual. 
+
+You might need to edit this accordingly or use some other method of setting the build_frequency. 
+
+The script will create an output directory, under which a number of build folders will be created for each job and an xml file in each one. 
+
+After the script has run, copy the folders in the output folder to your Jenkins installation and reload the data to see them all appear. 
+
+
